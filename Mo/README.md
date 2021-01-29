@@ -1,1 +1,2 @@
 1/26/2021: Class 3 - Active Learning Challenge
+1/27/2021: Class 3 - Friday 
