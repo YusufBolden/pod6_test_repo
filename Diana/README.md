@@ -1,9 +1,5 @@
-Customizing 'README'
+# Customizing README
 
-Updating "README.MD"
-
-Working from study group
+# this is a short comment
 
 
-making changes with the crew
-hope this shit works
