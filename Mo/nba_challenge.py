@@ -68,4 +68,4 @@ print(str(james_harden_percentage))
 #convert to integer
 print(int(jamal_murray_percentage))
 print(int(fred_vanvleet_percentage))
-print(int(james_harden_percentage))
+print(int(james_harden_percentage)) 
