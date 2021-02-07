@@ -32,11 +32,35 @@ print(f"In the 2020 NBA playoffs Jamal Murray made {jamal_murray_3pts_made} of {
 print(f"In the 2020 NBA playoffs James Hardeen mad {james_hardeen_3pts_made} of {james_hardeen_3pt_attempts} attempts.")
 
 # calculate the 3 point percentage of each player
-percentage_fred_vanvleet = 46/50
+percentage_fred_vanvleet = 46/110
 print(percentage_fred_vanvleet)
-percentage_jamal_murray = 43/50
+percentage_jamal_murray = 43/93
 print(percentage_jamal_murray)
-percentage_james_hardeen = 37/50
+percentage_james_hardeen = 37/109
 print(percentage_james_hardeen)
 
-#print out paragraph with only 1  sentence per line
+# print out paragraph on sentence per line
+print(str("The Lakers went all in this offseason and swung a deal for former Pelican forward Anthony Davis.\nThey sent a package of Brandon Ingram, Lonzo Ball, Josh Hart, and 3 first-round picks to New Orleans to land Davis.\nThose three have made good developments with the Pelicans, especially Brandon Ingram.\nBut, the deal is still a huge win for the Lakers as Lebron, Davis, and company have put together an incredible season.\nLos Angeles has ridden James and Davis, along with a supporting cast built around them, to the second-best record in the NBA.\nThe Lakers ended the season atop the Western Conference with a record of 49-14.\nThey were narrowly behind the Bucks for the best record in the league.\nDavis proved to the final piece necessary for the Lakers to rebound from missing the playoffs last year.\nLos Angeles was a dominant club on both sides of the ball and are in a position to have another successful year next season. "))
+
+# Make a boolean variable called "lakers_are_best"
+
+lakers_are_best = True 
+
+print(f"The lakers are the best team in the NBA.This is a {lakers_are_best} statement.") 
+
+# Type conversion part 2
+percentage_fred_vanvleet = 46/110
+print(percentage_fred_vanvleet)
+percentage_jamal_murray = 43/93
+print(percentage_jamal_murray)
+percentage_james_hardeen = 37/109
+print(percentage_james_hardeen)
+
+
+fred_vanvleet_percentage_string = f"Fred Vanleet scored {percentage_fred_vanvleet} percent of 3pt. attempts last NBA season. " 
+print(fred_vanvleet_percentage_string)
+jamal_murray_percentage_string = f"Jamal Murray scored {.46} percent of 3pt. attempts last NBA season."
+print(jamal_murray_percentage_string)
+james_hardeen_percentage_string = f"James Hardeen scored {.33} percent of 3pt. attempts last NBA season."
+print(james_hardeen_percentage_string)
+
