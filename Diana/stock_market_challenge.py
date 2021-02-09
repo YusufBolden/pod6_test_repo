@@ -15,6 +15,7 @@ print(f"Wow, thats amazing, you have $ {savings} to invest.")
 stock = input("The avaible stocks are Apple, Amazon, Facebook, Google and Microsoft.\nWhich of these would you like to see the breakdown on?" )  
 print(f"Great choice {name}! We love {stock}.  ")
 
+
 Amazon = 3000
 Apple = 100
 Facebook = 250
@@ -37,11 +38,10 @@ elif stock == "microsoft":
     price = (200)
     shares = (savings / Microsoft)
 
-
+print(f"Based on your selection, you are able to purchase {shares} of {stock}.The current market price is {price} per share.")
 
 
 #else
 
 
 # Perform user-specific calculation
-print(f"Based on the information provided "(name)"  has "{savings}" and can purchase {shares} at $"{price}".")
