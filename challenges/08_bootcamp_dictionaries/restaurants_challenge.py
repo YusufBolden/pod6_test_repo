@@ -35,7 +35,12 @@ print(restaurant)
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
 # TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
 # TODO: Write code to print the URL of the website of Four Barrel Coffee.
+print(restaurant["latitude"], restaurant["longitude"])
 
+restaurant_info = restaurant["address1"], restaurant["city"], restaurant["state"], restaurant["zip_code"]
+print(str(restaurant_info))
+
+print(restaurant["url"])
 
 print()
 
@@ -59,6 +64,26 @@ restaurant_1  = {
 
 print()
 
+restaurant_1 = {
+    "name": "indochine",
+    "address": "430 Lafayette St, New York, NY 10003",
+    "favourite_dish": "crispy red snapper"}
+
+restaurant_2 = {
+    "name": "asia de cuba",
+    "address": "415 Lafayette St, New York, NY 10003",
+    "favourite_dish": "tunapica tartare"}
+
+restaurant_3 = {
+    "name": "china grill",
+    "address": "60 W 53rd St, New York, NY 10019",
+    "favourite_dish": "miso glazed black cod"}
+    
+print(restaurant_1) 
+print(restaurant_2)
+print(restaurant_3)
+
+
 print("Question 3")
 '''
 Imagine that any 1 of your most favourite restaurants stopped serving your favourite dish there. 
@@ -66,8 +91,10 @@ Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
-# TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
+restaurant_1.pop("favourite_dish")
 
+# TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
+print(restaurant_1)
 print()
 
 print("Question 4")
@@ -77,7 +104,11 @@ Update just this value in that restaurant's dictionary
 '''
 
 # TODO: Update the address field of 1 restaurant 
+a = 2
+a = 3
+restaurant_2["address"] = "234 Broadway, NY, NY 11225"
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
+print(restaurant_2["address"])
 # TODO: Print the updated dictionary.
-
+print(restaurant_2)
 print()
