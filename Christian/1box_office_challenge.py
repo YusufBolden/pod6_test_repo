@@ -42,3 +42,4 @@ top_100 = remaining_50_list + top_50_list
 # Note: Print your new variable to see the string version of the movies
 top_100_str = top_100
 print(top_100_str)
+  
