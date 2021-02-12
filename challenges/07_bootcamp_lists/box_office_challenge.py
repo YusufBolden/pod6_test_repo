@@ -23,7 +23,11 @@ print()
 # TODO: Let's make sure "remaining_50_list" has exactly 50 movie titles
 print()
 
+<<<<<<< HEAD
 # TODO: Great! Let's join the two lists into one list called "top_100". 
+=======
+# TODO: Great! Let's join the two lists into one list called "top_100".
+>>>>>>> db316c08c86149d938deba397a9b94223dd2fe10
 # Note: Print your new variable to see the combined list of movies
 print()
 
