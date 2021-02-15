@@ -77,18 +77,45 @@ lineup_article = "The Lakers went all in this offseason and swung a deal for for
 print(lineup_article.upper())
 # TODO: As above, print out the paragraph with only 1 sentence per line, and all in upper case
 
-print('Challenge 3.3: Make a boolean variable indicating whether you think the Lakers are the best NBA team')
+#print('Challenge 3.3: Make a boolean variable indicating whether you think the Lakers are the best NBA team')
 lakers_are_best = True
 
-print(I think)
+print(lakers_are_best)
 
 # TODO: make a variable called `lakers_are_best` to indicate this
+
 # TODO: print out the variable in an f-string to convey your opinion on the lakers
+print(f"The lakers are the best team in the NBA.This is a {lakers_are_best} statement.") 
 
-print('Challenge 3.4: Type Conversion')
-# TODO: Convert your `lakers_are_best` variable to an integer, and print it out. 
+#print('Challenge 3.4: Type Conversion')
+# TODO: Convert your `lakers_are_best` variable to an integer, and print it out.
+print(int(lakers_are_best)) 
 # TODO: Convert your `lakers_are best` variable to a float, and print it out
+print(float(lakers_are_best))
 
-print('Challenge 3.5: Type Conversion Part 2')
+#print('Challenge 3.5: Type Conversion Part 2')
+
+
+
 # TODO: Take each player's three point percentage (from part 2.5) and convert it to a string, then print it out.
+percentage_fred_vanvleet = 46/110
+percentage_jamal_murray = 43/93
+percentage_james_harden = 37/109
+
+
+
+
+fred_vanvleet_percentage_string = (f"Fred Vanleet scored {percentage_fred_vanvleet} percent of 3pt. attempts last NBA season. ") 
+print(fred_vanvleet_percentage_string)
+jamal_murray_percentage_string = (f"Jamal Murray scored {percentage_jamal_murray} percent of 3pt. attempts last NBA season.")
+print(jamal_murray_percentage_string)
+james_harden_percentage_string = (f"James Hardeen scored {percentage_james_harden} percent of 3pt. attempts last NBA season.")
+print(james_harden_percentage_string)
+
 # TODO: Take each player's three point percentage (from part 2.5) and convert it to an integer, then print it out.
+
+print(int(percentage_fred_vanvleet))
+
+print(int(percentage_jamal_murray))
+
+print(int(percentage_james_harden))
