@@ -2,7 +2,6 @@
 print("Challenge: Favourite Restaurants")
 
 print()
-
 print("Question 1")
 
 '''

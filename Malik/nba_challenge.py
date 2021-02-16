@@ -77,7 +77,6 @@ print(str(fred_v_3pts_percentage))
 print(str(james_h_3pts_percentage))
 
 # TODO: Take each player's three point percentage (from part 2.5) and convert it to an integer, then print it out.
-
 print(int(jamal_m_3pts_percentage))
 print(int(fred_v_3pts_percentage))
 print(int(james_h_3pts_percentage))

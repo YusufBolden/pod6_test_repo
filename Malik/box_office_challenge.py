@@ -31,12 +31,10 @@ print(remaining_50_list)
 
 # TODO: Let's make sure "remaining_50_list" has exactly 50 movie titles
 
-count = 0
-for i in remaining_50_list:
-    count = count+1
-print("# of movie titles:",count)
-
-
+# count = 0
+# for i in remaining_50_list:
+#     count = count+1
+print("# of movie titles:",len(remaining_50_list)
 
 # TODO: Great! Let's join the two lists into one list called "top_100". Uncomment the line of code below and run your code to see how it's done!
 # Note: Print your new variable to see the combined list of movies

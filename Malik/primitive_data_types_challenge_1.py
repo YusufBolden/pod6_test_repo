@@ -6,8 +6,6 @@ print(celsius_100)
 # print out that it is a float
 print('It is a float because there are decimal points')
 
-
-
 print('Question 2:')
 # convert 0 degrees f to celsius
 celsius_0 = (0-32)*5/9

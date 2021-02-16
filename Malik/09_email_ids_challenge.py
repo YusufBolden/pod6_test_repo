@@ -4,8 +4,6 @@
 print('Question 1')
 employee_name = 'Ash Rahman'
 
-
-
 # You have decided the format of the email should be: Ash Rahman -> ash.rahman@ripplemedia.com
 # Let's write some code that converts a name into an email id that matches this format
 # 1.1 TODO: Let's save the lowercase version of the employee_name in a new variable 'lower_name'
