@@ -53,7 +53,6 @@ print(title)
 
 # TODO: Let's print the top 10 movies in "top_100" as a list. Let's use the slice syntax to accomplish this!
 print(top_100[0:10])
-
 # TODO: Let's convert the list "top_100" back into a string. Assign it to a variable called "top_100_str".
 # Note: Print your new variable to see the string version of the movies
 print(', '.join(top_100))
