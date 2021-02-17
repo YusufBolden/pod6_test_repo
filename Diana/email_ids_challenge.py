@@ -37,6 +37,7 @@ emails = []
 # 2.1 TODO: Use a "for" loop to go over each name in the names list
 
 for n in names:
+
     lower_name = n.lower()
     names_list = lower_name.split(' ')
     joined_names = '.'.join(names_list)
