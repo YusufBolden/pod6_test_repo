@@ -1,4 +1,4 @@
-# Snippets Challenge
+# Stock market Challenge
 
 # Playing with the stock market.
 
@@ -28,13 +28,13 @@ if stock == "Amazon":
 elif stock == "apple":
     price = (100)
     shares = (savings / Apple) 
-elif stock == "facebook":
+elif stock == "Facebook":
     price = (250)
     shares = (savings / Facebook)
-elif stock == "google":
+elif stock == "Google":
     price = (1400)
     shares = (savings / Google)
-elif stock == "microsoft":
+elif stock == "Microsoft":
     price = (200)
     shares = (savings / Microsoft)
 
