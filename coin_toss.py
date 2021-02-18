@@ -20,11 +20,12 @@ for i in tqdm(range(10000000), desc='Coin Flip Progress'):
     else:
         tails += 1
 print(heads, tails)
+print(f"The difference between heads and tails is " + str(abs(heads - tails)) + " coin tosses.")
 
 # Nested for-loop
 num_games = 3
 
-for game in trange(num_games, desc='Overall Progress'):
+for game in tqdm(range(num_games), desc='Overall Progress'):
     heads = 0
     tails = 0
     
@@ -35,4 +36,6 @@ for game in trange(num_games, desc='Overall Progress'):
         else:
             tails += 1
     print(f'Heads: {heads}, Tails: {tails}')
+    print(f"The difference between heads and tails is " + str(abs(heads - tails)) + " coin tosses.")
+
 
