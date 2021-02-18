@@ -1,5 +1,11 @@
+import random
 from tqdm import trange, tqdm
 from random import randint
+
+numlist = []
+for i in range(10):
+    numlist.append(random.randint(1, 15))
+print(numlist)
 
 '''
 note: If you receive an ImportError, NameError or message stating there is no module named tqdm, run the following in your terminal:
@@ -23,7 +29,7 @@ print(heads, tails)
 print(f"The difference between heads and tails is " + str(abs(heads - tails)) + " coin tosses.")
 
 # Nested for-loop
-num_games = 3
+num_games = 5
 
 for game in tqdm(range(num_games), desc='Overall Progress'):
     heads = 0
