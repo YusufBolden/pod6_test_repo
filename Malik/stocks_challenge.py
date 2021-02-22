@@ -1,5 +1,4 @@
 print("Challenge 3.2: Playing with the stock market")
-
 print()
 # Creating variables to store the current (approximate) market price of these 5 companies - Amazon, Apple, Facebook, Google and Microsoft.
 
@@ -60,6 +59,4 @@ if price == "Try Again":
     print("Invalid")
 else:
     print(f'{name} has {save} in savings and can buy {shares} of {stock} at current price of {price}')
-
-
 print()
