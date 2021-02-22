@@ -16,7 +16,7 @@ name = input('What is your name?')
 
 # TODO: Write code to ask the client his savings and save it to another variable.
 
-save = input('What is in your savings?')
+save = int(input('What is in your savings?'))
 
 # TODO: Write code to ask the client the stock he is interested in and save it to another variable, as shown below.
 
@@ -34,12 +34,31 @@ if stock == "amzn":
 elif ...
 else ...
 '''
+if stock == "amzn":
+    price = amazon
+    shares = save/price
+elif stock == "aapl":
+    price = apple
+    shares = save/price
+elif stock == "fb":
+    price = fb
+    shares = save/price
+elif stock == "goog":
+    price = google
+    shares = save/price
+elif stock == "msft":
+    price = msft
+    shares = save/price
+else: stock = "Try Again"
 
-print()
 
 print("Challenge 3.2.3: Output for the user the result")
-# TODO: COnce you have calculated the number of stocks that can be purchased, print the result for the client. Result should be in a format like this:
+# TODO: Once you have calculated the number of stocks that can be purchased, print the result for the client. Result should be in a format like this:
 
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
+if price == "Try Again":
+    print("Invalid")
+else:
+    print(f'{name} has {save} in savings and can buy {shares} of {stock} at current price of {price}')
 
 print()
