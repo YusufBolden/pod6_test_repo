@@ -61,4 +61,5 @@ if price == "Try Again":
 else:
     print(f'{name} has {save} in savings and can buy {shares} of {stock} at current price of {price}')
 
+
 print()
