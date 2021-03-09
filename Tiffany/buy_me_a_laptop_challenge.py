@@ -92,7 +92,7 @@ print("Suppose that the 13-inch MacBook Pro in space gray color is sold out. Als
 # TODO: Update the laptops dictionary.
 # TODO: Print the new dictionary.
 laptops[0]['types'][0]['colors'] = ['silver']
-laptops[0]['types'][0]['storage'] = ['512 GB']]
+laptops[0]['types'][0]['storage'] = ['512 GB']
 print(laptops)
 
 print("Question 3: listing all the prices")
