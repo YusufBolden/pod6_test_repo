@@ -1,5 +1,6 @@
-# Customizing README.md
+# Course work for Justice Through Code program
 
-# this is a short comment
+-Guthub
+    * repositories, creating, merging and creating branches.
 
 
