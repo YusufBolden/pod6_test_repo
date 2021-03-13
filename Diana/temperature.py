@@ -1,4 +1,5 @@
 # Assigning variable for converting 100 degrees farenheit to celsius
+# The formula for for farenheit is 100-32 
 celsius_100 = ((100-32) * 5/9)
 
 #printing results of conversion 1
