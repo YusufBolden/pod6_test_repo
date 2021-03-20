@@ -17,7 +17,7 @@ print(remaining_50_lists)
 
 # TODO: Hmm. Looks like "remaining_50_list" contains the movie "The Matrix" which is also in the "top_50_list". Let's remove this duplicate title from "remaining_50_list".
  
- remaining_50_lists.remove("The Matrix")
+remaining_50_lists.remove("The Matrix")
 
 # TODO: We're down to 49 movies in "remaining_50_list". Let's add a movie to the list called "Anywhere But Here"
 
