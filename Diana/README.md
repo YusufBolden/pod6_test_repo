@@ -1,5 +1,1 @@
-# Customizing README.md
-
-# this is a short comment
-
-
+ Justice Through Code coursework Spring 2021
