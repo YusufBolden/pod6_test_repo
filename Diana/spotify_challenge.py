@@ -59,7 +59,7 @@ jprint(result)
 
 print("Question 3")
 # Figure out how to choose the top artist from the search, and get that artist's id
-#
+
 # Each artist in spotify has a unique ID. The challenge is here that the we've basically done the equivalent of typing 'Beyonce' into the spotify search bar. However, for further use in looking up artist info we need the **id** for the artist -- there is a unique id for each artist that is a long string.
 #
 # So, we want to find the first artist returned by that search and get the id for that artist
@@ -71,19 +71,16 @@ print("Question 3")
 # we take item 0 here -- this is 'Beyonce'
 # items after 0 are similar searches, but not Beyonce herself
 
-#print(result['artists']['items'][0]['name']) # uncomment if you want to see the results
-#print(result['artists']['items'][1]['name']) # uncomment if you want to see the results
-#print(result['artists']['items'][2]['name']) # uncomment if you want to see the results
+print(result['artists']['items'][0]['name']) # uncomment if you want to see the results
+print(result['artists']['items'][1]['name']) # uncomment if you want to see the results
+print(result['artists']['items'][2]['name']) # uncomment if you want to see the results
 
 # lets get the artist id, so that we can look up more stuff for them
 # each artist has a unique ID like this
 
 artist_id = result['artists']['items'][0]['id']
 
-#print(artist_id) # uncomment if you want to see the results
-
-print(artist_id)
-
+print(artist_id) # uncomment if you want to see the results
 
 print("Question 4")
 
@@ -107,7 +104,7 @@ artist_info = sp.artist(artist_id)
 print(artist_info)
 # How do you to access key-value pairs for popularity?
 
-print(artist_info["popularity"])
+print(artist_info['popularity'])
 
 # Followers is a dictionarity itself, with the value 'total' being the total followers. How can we access it?
 
@@ -121,24 +118,22 @@ print("Question 5")
 # define a list of 5 chosen artists
 chosen_artists = ['Ana Tijoux', 'Kendrick Lamar', 'J Cole', 'Dead South', 'Greensky Bluegrass']
 #   - set up an empty list to hold your dictionaries for each artist
-popularities = []
+all_artist = []
+for artist in chosen_artists:
+    artist_dict = {}
+    result =sp.search(q=artist, type='artists')
+    artist_dict['name'] = artist
+    artist_dict['artist_id'] =result['artist']['items'][0]['id']
+    artist_info =sp.artist(result['artist']['items'][0]['id'])
+    artist_dict['popularit'] =artist_info['popularity']
+    artist_dict['followers'] =artist_info['followers']['total']
+    all_artist.append(artist_dict)
 
-for singer in chosen_artists:                           #   - loop through artist names and       
-   results = sp.search(artist, type='artist')            #       - search that artist using sp.search(), then get artist id
-   artist_id =results['artist']['items'][0]['id']       #       - search that artist using sp.search(), then get artist id
-   artist_info = sp.artist(artist_id)                  #       - use sp.artist() to get artist info
-
-
+jprint(all_artist)
 
 #       - put artist name, id, popularity, and followers into a dictionary for that artist
 
-new_dict = {}
-new_dict['name'] = singer
-new_dict['id'] = artist_id['id']
-new_dict['popularity'] =artist_info['populaairty']
-new_dict['followers'] = artist_info['followers']['total']
 
-print(new_dict)
 #       - append that dictionary as a new item in the list
 
 

@@ -25,27 +25,23 @@ for meat in meats:
 
 print(sandwiches)
 
-print()
 
 print('Question 3')
 
 # TODO: Let's create an input to take a customer order for a sandwich, for example: 'Ham & Swiss'
-
 # TODO: Loop over the sandwiches list.
-
 # TODO: If it exists, print 'Great choice! 1 Ham & Swiss coming right up!'
 
-order = input("Hi, What can i get you?: ")
 
+
+
+order = input("Hi, What can i get you?: ")
 for sandwich in sandwiches:
     if order == sandwich:
-        print("Great choice! 1 Ham & Swiss coming right up!")
+        print(f'One {order} coming right up!')
         break
-    
-    else:
-        print("I dont know what kind of sandwich that is....weirdo!")
-
-
+else:
+    print('This order is not available, please check out our menu')
 
 
 

@@ -1,4 +1,6 @@
 # Challenge 1
+
+
 print("Challenge 1: All possible laptops\n")
 
 print("Question 1: You are given a list containing the laptop names. Print the names of each the laptops separately.")
@@ -10,7 +12,6 @@ print("All laptops names:")
 
 for laptop_names in all_laptops:
     print(laptop_names)
-
 
 # Challenge 2
 
@@ -46,8 +47,8 @@ laptops = [
                     "price": [2399, 2799]
                 }
             ],
-            "description": "If you're after the latest and greatest laptop from Apple, we suggest you look into the 2020 model of the MacBook Pro. The headline Touch Bar – a thin OLED display at the top of the keyboard which can be used for any number of things, whether that be auto-suggesting words as you type or offering Touch ID so you can log in with just your fingerprint – is of course included. It's certainly retained Apple's sense of style, but it comes at a cost. This is a pricey machine, so you may want to consider one of the Windows alternatives. But, if you're a steadfast Apple diehard, this is definitely the best laptop for you!"
-        },
+                "description": "If you're after the latest and greatest laptop from Apple, we suggest you look into the 2020 model of the MacBook Pro. The headline Touch Bar – a thin OLED display at the top of the keyboard which can be used for any number of things, whether that be auto-suggesting words as you type or offering Touch ID so you can log in with just your fingerprint – is of course included. It's certainly retained Apple's sense of style, but it comes at a cost. This is a pricey machine, so you may want to consider one of the Windows alternatives. But, if you're a steadfast Apple diehard, this is definitely the best laptop for you!"
+                   },
         {
             "id": "2",
             "productName": "Dell XPS",
@@ -78,38 +79,28 @@ laptops = [
 
 # TODO: Write code to print out the MacBook Pro url 
 
-#print(f" The url for the MacBook Pro is: {laptops[0]["url"]} ")
-
-print(f'The Url for Apple MacBook Pro is :{laptops[0]["url"]}')
+print(f'The URL for the Apple Macbook Pro: is {laptops[0]["url"]}')
 
 # TODO: Write code to print all possible prices of the 16-inch MacBook Pro.
 
-print(f'The following are the possible prices for the 16-inch MacBook Pro: {laptops[0]["types"][1]["price"]}')
-
+print(f'The prices for the 16-inch MacBook Pro are {laptops[0]["types"][1]["price"]}')
 
 # TODO: Write code to print all the color options for Dell XPS 13.
 
-
-print(f'The following are the color options available for the Dell XPS 13: {laptops[1]["types"][0]["colors"]}')
+print(f'The color options for the Dell XPS 13-inch are {laptops[1]["types"][0]["colors"]}')
 
 # TODO: Write code to print the description of Dell XPS laptop.
 
-print(f'Dell XPS laptop description: {laptops[1]["description"]}')
+print(f'Dell XPS laptop description:    {laptops[1]["description"]}')
 
 print("Question 2: Out of Stock laptops")
-
-
-
-
 print("Suppose that the 13-inch MacBook Pro in space gray color is sold out. Also, the same laptop with 1 TB storage is out of stock as well. Update the list of dictionaries such that these options are removed. Print the updated dictionary.")
+
 
 # TODO: Update the laptops dictionary.
 
-laptops[0]["types"][0]["colors"] = ["silver"]
-laptops[0]['types'][0]['storage'] = ["512 GB"]
-
-
-
+laptops[0]["types"][0]["colors"]=["silver"]
+laptops[0]["types"][0]["storage"]=["512 GB"]
 # TODO: Print the new dictionary.
 
 print(laptops)
@@ -119,8 +110,6 @@ print("Time to look at the range of prices. Using a nested loops, print out all 
 
 # TODO: print out all possible prices for the laptops
 
-for lap in laptops:
-    for pr in lap['types']:
-        for result in pr['price']:
-            print(result)
-
+for model in laptops:
+    for computer in model["types"]:
+        print(computer["price"])

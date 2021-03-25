@@ -45,8 +45,3 @@ for n in names:
     emails.append(email)
 print(emails)
 
-
-# 2.2 TODO: Inside the "for" loop, create the email id by re-using the logic from Question 1 and..
-
-
-# 2.3 TODO: ..add the email to the emails list
