@@ -48,7 +48,7 @@ print("Question 2")
 
 # lets go get an artist! Does the spotipy function need any special parameters?
 
-name = 'Beyonce'  # chosen artist
+name = 'Kendrick Lamar'  # chosen artist
 
 # result =   # fill this in
 result = sp.search(name, type ='artist') 
@@ -61,7 +61,7 @@ print("Question 3")
 # Figure out how to choose the top artist from the search, and get that artist's id
 
 # Each artist in spotify has a unique ID. The challenge is here that the we've basically done the equivalent of typing 'Beyonce' into the spotify search bar. However, for further use in looking up artist info we need the **id** for the artist -- there is a unique id for each artist that is a long string.
-#
+#"6C1ohJrd5VydigQtaGy5Wa"
 # So, we want to find the first artist returned by that search and get the id for that artist
 #
 # **Hint**: The result of the search is a nested data structure. How can you explore the nested *layers* of this structure to pull out the right information?
@@ -71,9 +71,7 @@ print("Question 3")
 # we take item 0 here -- this is 'Beyonce'
 # items after 0 are similar searches, but not Beyonce herself
 
-print(result['artists']['items'][0]['name']) # uncomment if you want to see the results
-print(result['artists']['items'][1]['name']) # uncomment if you want to see the results
-print(result['artists']['items'][2]['name']) # uncomment if you want to see the results
+print(result['artists']['items'][0]['name']) 
 
 # lets get the artist id, so that we can look up more stuff for them
 # each artist has a unique ID like this
@@ -119,22 +117,24 @@ print("Question 5")
 chosen_artists = ['Ana Tijoux', 'Kendrick Lamar', 'J Cole', 'Dead South', 'Greensky Bluegrass']
 #   - set up an empty list to hold your dictionaries for each artist
 all_artist = []
+
 for artist in chosen_artists:
-    artist_dict = {}
-    result =sp.search(q=artist, type='artists')
-    artist_dict['name'] = artist
-    artist_dict['artist_id'] =result['artist']['items'][0]['id']
-    artist_info =sp.artist(result['artist']['items'][0]['id'])
-    artist_dict['popularit'] =artist_info['popularity']
-    artist_dict['followers'] =artist_info['followers']['total']
-    all_artist.append(artist_dict)
+    search_result =sp.search(artist, type='artist')
+    artist_id = search_result['artists']['items'][0]['id']
+    artist_info = sp.artist(artist_id)
+    artist_pop = artist_info['followers']    
 
 jprint(all_artist)
 
 #       - put artist name, id, popularity, and followers into a dictionary for that artist
-
+artist_dict ={}
+artist_dict['name']= artist
+artist_dict['id'] = artist_id
+artist_dict['popularity'] = artist_info['popularity']
+artist_dict['followers'] = artist_info['followers']['total']
 
 #       - append that dictionary as a new item in the list
+all_artist.append(artist_dict)
 
 
 print("Question 6")
@@ -143,7 +143,7 @@ print("Question 6")
 # You can accomplish this by looking at your array and indexing the array to print the name of the artist matching the rows with highest & lowest popularity and follower counts
 
 
-print(popularities)
+print(artist_pop)
 
 
 print("Bonus!")
@@ -152,8 +152,8 @@ print("Bonus!")
 # Note, there is a function using the spotify api to get the 'related artists' given an artist id! Can you figure out how to use it?
 
 
-#sim =   # fill this in
-# jprint(sim['artists'][:3]) # uncomment this like to see what the top 3 similar artists are
+#sim = 
+#jprint(sim['artists'][:3]) # uncomment this like to see what the top 3 similar artists are
 
 
 
