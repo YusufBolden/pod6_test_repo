@@ -5,7 +5,7 @@
 
 # 1 Import all the functions in the playlist_functions.py
 
-from playlist_functions2 import *
+from playlist_functions import *
 import numpy as np 
 
 
