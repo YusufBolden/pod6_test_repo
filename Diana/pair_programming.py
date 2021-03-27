@@ -29,8 +29,18 @@ print('PART 1\n')
 # HINT: make sure it works by doing something like my_account = create_account()
 # Then print out my_account to see whether it has the correct info
 
+def create_account():
+    username = input('What is your name?:   ')
+    password = input('Enter a password: ')
+    account = {'username': username, 'password': password, 'balance': 0  }
+    return(account)
+   
+
+my_account = create_account()
+print(my_account)
 
 '''
+
 PART 2: deposit()
 This function should make a deposit to add money to the account
 The function should take 2 arguments
@@ -42,6 +52,12 @@ Test your function by making a few deposits to your account, then printing out y
 
 print('PART 2\n')
 # TODO define the deposit() function here and make sure it works
+def deposit(account, amount):
+    account['balance'] += amount
+
+deposit(my_account, 2000)
+print(my_account)
+
 
 
 
@@ -61,6 +77,16 @@ Test your function by making several withdrawals to your account
 print('PART 3\n')
 # TODO define the withdraw() function here and make sure it works
 
+def withdrawl(account, amount):
+    if amount <= account['balance']:
+        account['balance'] -= amount
+    else:
+        print(f"Nah! You only have {account['balance']}")
+
+withdrawl(my_account, 40.00)    
+print(my_account)
+
+withdrawl(my_account,2300.00)       # Testing else: to avoid withdrawls over available funds
 
 '''
 BONUS QUESTION 4: Password-protect withdrawal and deposits
@@ -74,3 +100,5 @@ Test out your new functions to make sure they accept correct info, and let the u
 # TODO: define password-protected withdraw_secure() and deposit_secure() functions
 # HINT: there are tons of ways to do this correctly
 # HINT: you can write any additional functions if you like
+
+
