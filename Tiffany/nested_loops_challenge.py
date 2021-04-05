@@ -35,5 +35,5 @@ cust_order = input('What is your order?')
 
 for sandwich in sandwiches:
     if cust_order == sandwich:
-        print(f'Great choice! 1 {order} coming right up!')
+        print(f'Great choice! 1 {cust_order} coming right up!')
         break
